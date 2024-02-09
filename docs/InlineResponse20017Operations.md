@@ -1,0 +1,43 @@
+# InlineResponse20017Operations
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**paycomet_id** | **int** | PAYCOMET identifier | [optional] 
+**operation_id** | **int** | Bank Reference Identifier | [optional] 
+**method_id** | **int** | PAYCOMET payment method ID. 1 is for card. | [optional] 
+**timestamp** | **str** | Timestamp of transaction | [optional] 
+**settlement_date** | **str** | Settlement date of transaction | [optional] 
+**order** | **str** | Unique reference for merchant&#x27;s purchase | [optional] 
+**operation_type** | **int** | PAYCOMET operation type ID. | [optional] 
+**operation_name** | **str** | PAYCOMET operation type description. | [optional] 
+**state** | **int** | Identifier of the state of the operation. 0 means operation failed, 1 operation correct, 2 operation unfinished (pending payment). | [optional] 
+**state_name** | **str** | Literal of the state of the operation. | [optional] 
+**response** | **str** | Status of transation. OK, KO o UF (pending payment). | [optional] 
+**terminal** | **int** | Product or terminal Id. | [optional] 
+**terminal_name** | **str** | Customer product name | [optional] 
+**user** | **str** | Administrative user of the operation | [optional] 
+**amount** | **str** | Amount of the operation in number format. 1.00 EURO &#x3D; 100, 4.50 EUROS &#x3D; 450... | [optional] 
+**currency** | **str** | Currency of the transaction.  | [optional] 
+**amount_display** | **str** | Literal of the operation amount (with currency symbol) | [optional] 
+**error_code** | **int** | Error code given by PAYCOMET. | [optional] 
+**error_description** | **str** | PAYCOMET operation type description. | [optional] 
+**fee_euro** | **float** | PAYCOMET fee for the transaction fixed per operation (in euros) | [optional] 
+**fee_percent** | **float** | PAYCOMET fee for the transaction variable per operation (in euros) | [optional] 
+**original_ip** | **str** | IP Address of the customer that initiated the payment transaction | [optional] 
+**pan** | **str** | Masked credit/debit card | [optional] 
+**scoring** | **str** | Risk scoring value from 0 to 100. | [optional] 
+**merchant_bank** | **str** | Bank of merchant terminal. | [optional] 
+**bic_code** | **str** | Biccode of the entity by which the transaction was processed. | [optional] 
+**product_description** | **str** | Description of the product sold. | [optional] 
+**card_type** | **str** | Type of card. If it can be identified, information on the type of card will be sent (DEBIT, CREDIT, etc). Otherwise, the field will be returned blank. | [optional] 
+**card_category** | **str** | Category of card. If it can be identified, information on the category of card will be sent. Otherwise, the field will be returned blank. | [optional] 
+**card_brand** | **str** | Brand of card. If it can be identified, information on the brand of card will be sent. Otherwise, the field will be returned blank. | [optional] 
+**card_country** | **str** | Country of the issuer of the card in ISO3 Code (ex.: 724 &#x3D; Spain). May be left empty. | [optional] 
+**secure** | **str** | 0 or 1. Indicates if the transaction is secure. | [optional] 
+**split_id** | **int** | Split identifier in some operations | [optional] 
+**issuer_bank** | **str** | Bank of the card | [optional] 
+**auth_code** | **str** | Authorization bank code of the transaction (required to execute a return). | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
