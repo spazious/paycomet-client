@@ -13,7 +13,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "paycomet-client"
-VERSION = "2.99.0"
+VERSION = "2.99.0.1"
 # To install the library, run the following
 #
 # python setup.py install
@@ -21,7 +21,7 @@ VERSION = "2.99.0"
 # prerequisite: setuptools
 # http://pypi.python.org/pypi/setuptools
 
-REQUIRES = ["urllib3 >= 1.26.19", "six >= 1.10", "certifi", "python-dateutil"]
+REQUIRES = ["urllib3 >= 2.8.0", "six >= 1.10", "certifi", "python-dateutil"]
 
 setup(
     name=NAME,
@@ -30,6 +30,17 @@ setup(
     author_email="tecnico@paycomet.com",
     url="",
     keywords=["Swagger", "PAYCOMET REST API"],
+    python_requires=">=3.10",
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3 :: Only",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
+        "Programming Language :: Python :: 3.14",
+        "Programming Language :: Python :: 3.15",
+    ],
     install_requires=REQUIRES,
     packages=find_packages(),
     include_package_data=True,
